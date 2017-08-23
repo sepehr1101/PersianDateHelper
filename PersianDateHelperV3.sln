@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersianDateHelperV3", "PersianDateHelperV3\PersianDateHelperV3.csproj", "{7EF35C58-C1E0-4A22-A08F-FC398BCEA68D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersianDateHelper", "PersianDateHelperV3\PersianDateHelper.csproj", "{7EF35C58-C1E0-4A22-A08F-FC398BCEA68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersianDateHelper.DomainEntities", "PersianDateHelper.DomainEntities\PersianDateHelper.DomainEntities.csproj", "{D4DA246F-0521-4BCD-B89F-CE2B4DA26564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersianDateHelper.Test", "PersianDateHelper.Test\PersianDateHelper.Test.csproj", "{3069714C-21FB-47A9-9314-042A49E9EEB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7EF35C58-C1E0-4A22-A08F-FC398BCEA68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF35C58-C1E0-4A22-A08F-FC398BCEA68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF35C58-C1E0-4A22-A08F-FC398BCEA68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DA246F-0521-4BCD-B89F-CE2B4DA26564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DA246F-0521-4BCD-B89F-CE2B4DA26564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DA246F-0521-4BCD-B89F-CE2B4DA26564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DA246F-0521-4BCD-B89F-CE2B4DA26564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3069714C-21FB-47A9-9314-042A49E9EEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3069714C-21FB-47A9-9314-042A49E9EEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3069714C-21FB-47A9-9314-042A49E9EEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3069714C-21FB-47A9-9314-042A49E9EEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
