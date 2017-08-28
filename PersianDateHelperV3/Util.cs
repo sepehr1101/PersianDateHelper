@@ -28,5 +28,10 @@ namespace PersianDateHelper
         {
             return YearMonthDayManager.GetYearMonthDay(persianDate);
         }
+
+        public static string GetJalaliDate(DateTime dateTime, PersianDateType persianDateType)
+        {
+            return DateConvertor.GetJalaliDate(dateTime, persianDateType);
+        }
     }
 }

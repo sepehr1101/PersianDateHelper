@@ -3,11 +3,26 @@ using System.Collections.Generic;
 using System.Text;
 using PersianDateHelper.DomainEntities;
 using System.Linq;
+using System.Globalization;
 
 namespace PersianDateHelper
 {
     internal static class YearMonthDayManager
     {
+        internal static YearMonthDay GetYearMonthDay(DateTime dateTime)
+        {
+            PersianCalendar persianCalender = new PersianCalendar();          
+            int year = persianCalender.GetYear(dateTime);
+            int month = persianCalender.GetMonth(dateTime);
+            //string month = monthInt < 10 ? "0" + monthInt.ToString() : monthInt.ToString();
+            int day = persianCalender.GetDayOfMonth(dateTime);
+            //string day = dayInt < 10 ? "0" + dayInt.ToString() : dayInt.ToString();
+            YearMonthDay yearMonthDay = new YearMonthDay(year, month, day);
+            return yearMonthDay;
+            //string shamsiString10Char = String.Format("{0}/{1}/{2}", persianCalender.GetYear(dateTime), month, day);
+           // string shamsiString = shamsiString10Char.Substring(2, shamsiString10Char.Count() - 2);
+            //return shamsiString;
+        }
         internal static YearMonthDay GetYearMonthDay(string persianDate)
         {
             var persianDateType = GetPersianDateType(persianDate);

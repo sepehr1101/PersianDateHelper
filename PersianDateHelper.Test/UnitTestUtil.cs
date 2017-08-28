@@ -101,5 +101,38 @@ namespace PersianDateHelper.Test
             var diff2 = Util.GetDateDifference("95/10/20", "1394/03/22");
             Assert.AreEqual(diff, diff2);
         }
+
+        [TestMethod]
+        public void ConvertJalaliTest1()
+        {
+            DateTime dateTimeMiladi = new DateTime(2017, 8, 29);
+            string expectedResult = "13960607";
+            var convertionResult = Util.GetJalaliDate(dateTimeMiladi, PersianDateType.EightCharWithoutSlash);
+            Assert.AreEqual(expectedResult, convertionResult);
+        }
+        [TestMethod]
+        public void ConvertJalaliTest2()
+        {
+            DateTime dateTimeMiladi = new DateTime(2017, 8, 29);
+            string expectedResult = "96/06/07";
+            var convertionResult = Util.GetJalaliDate(dateTimeMiladi, PersianDateType.EightCharWithSlash);
+            Assert.AreEqual(expectedResult, convertionResult);
+        }
+        [TestMethod]
+        public void ConvertJalaliTest3()
+        {
+            DateTime dateTimeMiladi = new DateTime(2017, 8, 29);
+            string expectedResult = "960607";
+            var convertionResult = Util.GetJalaliDate(dateTimeMiladi, PersianDateType.SixChar);
+            Assert.AreEqual(expectedResult, convertionResult);
+        }
+        [TestMethod]
+        public void ConvertJalaliTest4()
+        {
+            DateTime dateTimeMiladi = new DateTime(2017, 8, 29);
+            string expectedResult = "1396/06/07";
+            var convertionResult = Util.GetJalaliDate(dateTimeMiladi, PersianDateType.TenChar);
+            Assert.AreEqual(expectedResult, convertionResult);
+        }
     }
 }
